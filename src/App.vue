@@ -2,9 +2,10 @@
   <div id="app">
     <!-- Barra de navegación con enlaces a diferentes rutas -->
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/addtask">Agregar Tarea</router-link> 
+      <img src="favicon.ico" alt="logo" width="70px" height="auto">
+      <router-link to="/">Añadir Tarea</router-link> |
+      <router-link to="/gettasks">Lista de Tareas</router-link> |
+      <router-link to="/combinedview">Lista Combinada</router-link> 
     </nav>
     <!-- Aquí se cargará el componente correspondiente a la ruta seleccionada -->
     <router-view/>
@@ -13,23 +14,28 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
 }
 
 nav {
-  padding: 30px;
+  padding: 15px;
+  background-color: rgba(247, 221, 183, 0.849);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #5e4907;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #574005;
 }
 </style>
